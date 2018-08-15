@@ -223,7 +223,7 @@ def show_video(argv):
 
 		cv2.imshow("Eroded/Dilated Image", im_dl)
 
-		contours, hierarchy = cv2.findContours(im_dl, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+		_, contours, hierarchy = cv2.findContours(im_dl, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 	
 		my_blobs = []
 		for cnt in contours:
